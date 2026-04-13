@@ -4,7 +4,7 @@ const routeImagenes = require('./api');
 const cors = require('cors');
 require('dotenv').config();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;  
 
 
 app.use(cors({origin: "https://port-proyecto-001.netlify.app/", credentials: true }))
