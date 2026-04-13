@@ -7,7 +7,7 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3000;  
 
 
-app.use(cors({origin: "https://netlify.com", credentials: true }))
+app.use(cors({origin: "*", credentials: true }))
 app.use(express.json());
 app.use("/api", routeImagenes);
 
