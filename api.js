@@ -1,6 +1,6 @@
 const express = require('express');
 const routeImagenes = express.Router();
-const { obtenerImagenes } = require('../services/ImageKit');
+const { obtenerImagenes } = require('./services/ImageKit');
 
 const INFORMACION_PERMITIDA = ["gimnospermas", "briofitas", "angiospermas"]
 
