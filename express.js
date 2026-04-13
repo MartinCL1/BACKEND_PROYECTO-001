@@ -11,6 +11,10 @@ app.use(cors({origin: "https://port-proyecto-001.netlify.app/", credentials: tru
 app.use(express.json());
 app.use("/api", routeImagenes);
 
+app.get('/', (request, response) => {
+    response.send('Hola Mundo');
+});
+
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en el puerto ${PORT}`);
 });
