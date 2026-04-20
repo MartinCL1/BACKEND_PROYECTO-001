@@ -35,7 +35,6 @@ const obtenerImagenes = async (especie) => {
         return { imagenFirmada, imagenIdentificador }
     })
 
-    console.log(nuevosFiles)
     return nuevosFiles;
 };
 
